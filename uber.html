@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Uber{
+            constructor(distance,timeduration,rateperhour){
+                this.distance=distance;
+                this.timeduration=timeduration;
+                this.rateperhour=rateperhour;
+            }
+            getRidedetails(){
+                return(`The distance travelled is ${this.distance} at the rate of Rs.${this.rateperhour} and time duration taken as ${this.timeduration}.`);
+            }
+            
+            getRidecalculation(){
+                var total=((this.distance * this.rateperhour)+ (this.timeduration));
+                return total;
+            }
+            settime(correcttime){
+                this.timeduration=correcttime;
+            }
+    
+        }
+        let person1=new Uber(100,160,20);
+        let person2=new Uber(50,60,20);
+        person1.settime(120);
+        console.log(person1.getRidedetails());
+        console.log(person2.getRidedetails());
+        console.log(person1.getRidecalculation());
+        console.log(person2.getRidecalculation());
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    class movie{
+        constructor(title,studio,rating){
+            this.title=title;
+            this.studio=studio;
+            this.rating=rating;
+        }
+
+        getmoviedetails(){
+            return(`The title of the movie is ${this.movie}, its rating is${this.rating} and the studio name is ${this.studio}.`);
+        }
+
+        // if(rating==null){
+        //    return this.rating="PG";
+        // }
+        // else{
+        //     return this.rating=rating;
+        // }
+        
+    }
+
+    let movie1= new movie("Casino Royale","Eon Productions","PG­13");
+    let movie2= new movie("Vikram","Raaj Kamal Films International");
+    console.log(movie1.getmoviedetails());
+    console.log(movie2.title);
+
+</script>
+</body>
+</html>
